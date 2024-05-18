@@ -1,0 +1,185 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    flex-wrap: wrap;
+}
+#navbar{
+    height:100pxpx;
+    
+    color:white;
+    
+}
+a{
+    margin-right:60px;
+    text-decoration: none;
+    color:white;
+}
+
+#search{
+    color:black;
+    margin-left:-20px;
+    text-align: center;
+    border:none;
+    height:19px;
+    width:19px;
+    object-fit: contain;
+    background-color: transparent;
+}
+
+input{
+    padding-left:100px;
+    margin-left:05px;
+}
+select{
+    margin-left:200px;
+}
+#logo{
+    margin-right:500px;
+    
+    
+}
+#name{
+    font-size:80px;
+    font-weight:900;
+    text-align:"center";
+    margin-left:380px;
+    display:inline-block;
+    color: rgb(189, 26, 26);
+    
+}
+#content1{
+    padding-left: 200px;
+    height:200px;
+    color:black;
+
+}
+#line{
+    font-weight:900;
+    font-size:25px;
+    color:rgb(94, 63, 63);
+    text-align: center;
+}
+.upper{
+    
+    height:250px;
+    position:absolute;
+    padding: 10px;
+    border-radius: 14px;
+}
+.bg4{
+    height:300PX;
+    width:100%;
+    /* text-align:center; */
+    /* background-color:rgb(33, 29, 29); */
+    padding:30px auto;
+    margin:10px auto;
+    display:relative;
+}
+.bg-img{
+    position:absolute;
+    height:280px;
+    width:99%;
+    padding:10px;
+    z-index:70px;
+    background-color: transparent;
+    border-radius: 30px;
+}
+.btn{
+   display:flex;
+}
+.orderdining{
+    height:200px;
+    width:450px;
+    border-radius: 14px;
+    padding:10px;
+    box-sizing: border-box;
+    
+}
+.content2{
+    color:black;
+    margin-left:80px;
+    font-size: 16px;
+    border-radius: 14px;
+    border:2px grey solid;
+}
+#slogan2{
+    font-weight:500;
+    font-size:large;
+    font-family:sans-serif;
+    padding-left:0;
+    color:black;
+}
+.collection{
+    color:black;
+    font-size:larger;
+    font-weight:700;
+    
+}
+.collection-item{
+    display: flex;
+}
+.item{
+    margin:10px;
+    padding:10px;
+    border-radius: 14px;
+    border:2px grey solid;
+}
+.collect{
+    height:200px;
+    width:350px;
+    border-radius: 14px;
+}
+#country{
+    margin-left:700px;
+}
+#lang{
+    margin-left:5px;
+}
+.about{
+    color:white;
+    text-decoration:none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.footer{
+    display:inline-block;
+    color:white;
+}
+#footbg{
+    background-color:rgb(113, 205, 219);
+}
+
+
+.options{
+    text-decoration: none;
+    color:black;
+}
+#logoimage{
+    display: inline-block;
+    height:100px;
+    width:100px;
+    margin-left:0;
+    padding-left:0;
+}
+.or{
+    margin-left:200px;
+    font-weight:900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.impnote{
+    /* justify-content: center; */
+    text-align: center;
+    color:chocolate;
+
+}
+#trust{
+    font-size:25px;
+    font-weight:800px;
+    text-transform: capitalize;
+}
+#nos{
+    font-size:20px;
+    font-weight:px;
+    color:orangered;
+
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map My Food</title>
+    <link rel="stylesheet"href="/css/style2.css">
+    <link rel="stylesheet"href="/css/style.css">
+     <link rel="icon" href="/img/logo.png" type="png">
+
+</head>
+<body>
+    <header>
+    <div>
+    <b style="text-shadow:yellow;color:red;font-weight:700;font-size:20px">Map My Food</b>
+    <div class="motive">
+                <select name="city">
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi ">Delhi </option>
+                <option value="Kolkata ">Kolkata </option>
+                <option value="Chennai">Chennai  </option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Pune">Pune</option>
+                <option value="Surat ">Surat </option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Kanpur">Kanpur</option>
+                <option value="Lucknow">Lucknow</option>
+                <option value="Nagpur">Nagpur</option>
+                <option value="Indore">Indore</option>
+                <option value="Patna">Patna</option>
+                <option value="Bhopal">Bhopal</option>
+                <option value="Thane">Thane</option>
+                <option value="Vadodara">Vadodara</option>
+                <option value="Visakhapatnam">Visakhapatnam</option>
+                <option value="Pimpri-Chinchwad">Pimpri-Chinchwad</option>
+                <option value="prayagraj">prayagaraj</option>
+    
+            </select>
+            <input type="text" placeholder="enter your location" >
+            <button id="search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bibi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg></button>
+            <br>
+            <b >yeh taste kiya kya</b>
+         </div>
+    </div>
+    <br>
+    <div style="text-align: center;">
+        <button onclick="myFunction()" class="but"><img class="size"src="/img/delivery3.webp" alt="delivery">Delivery</button>
+        <button onclick="red()" class="but"><img class="size"src="/img/dining2.webp" alt="">Dining</button>
+        <button onclick="redirect()" class="but"><img class="size"src="/img/nightout2.webp" alt="">Night out</button>
+    </div>
+    </header>
+    <main>
+    <b id="text">Inspiration for your order</b>
+    <br>
+    <div class="containerimg">
+        <a href="#"><img class="view"src="/img/jalebi.webp"alt="dosa">jalebi</a>
+        <a href="#"><img class="view"src="/img/pizza.webp"alt="dosa">pizza</a>
+        <a href="#"><img class="view"src="/img/dosa.webp"alt="dosa">dosa</a>
+        <a href="#"><img class="view"src="/img/kachori.webp"alt="dosa">kachori</a>
+        <a href="#"><img class="view"src="/img/idli.webp"alt="dosa">idli</a>
+        <a href="#"><img class="view"src="/img/cake.webp"alt="dosa">cake</a>
+        <a href="#"><img class="view"src="/img/thali.webp"alt="dosa">thali</a>
+        <a href="#"><img class="view"src="/img/north indian.webp"alt="dosa">north indian</a>
+        <a href="#"><img class="view"src="/img/rasgulla.webp"alt="dosa">rasgulla</a>
+        <a href="#"><img class="view"src="/img/biryani.webp"alt="dosa">biryani</a>
+        <a href="#"><img class="view"src="/img/burger.webp"alt="dosa">burger</a>
+        <a href="#"><img class="view"src="/img/dhokla.webp"alt="dosa">dhokla</a>
+    </div>
+    <br>
+    <div>
+    <b>Delivery restaurants in Prayagraj</b>
+    <br>
+    </div>
+    <div class="btn-div" style="display:flex;padding:0">
+        <button class="btn-img"><img class="bodyimg"src="/img/hot pizza and burger restaurants.webp" alt=""><pre><b>Hot Pizza and Burger Restaurant</b><br>pizza,burger,pasta,rolls and many more...   100rs for one<br><br><b> Expexted time:31mins</b></pre></button>
+        <button  class="btn-img"><img class="bodyimg"src="/img/chandralok kachori.webp" alt=""><pre><b>Chandralok Kachori Restaurants</b><br>south indian,chinese,fastfood    100rs for one<br><br><b> Expexted time:35mins</b></pre></button>
+        <button class="btn-img"><img class="bodyimg"src="/img/breakfast adda.webp" alt=""><pre><b>Breakfast Adda</b><br>street foods,north indians food    200rs for one<br><br><b> Expexted time:31mins</b></pre</button>
+        <button class="btn-img"><img class="bodyimg"src="/img/chicago pizza.webp" alt=""><pre><b>Chicago pizza restaurant</b><br>pizza,fastfood and beverages   100rs for one<br><br><b> Expexted time:31mins</b></pre></button>
+        <button class="btn-img"><img class="bodyimg"src="/img/eat no.webp" alt=""><pre><b>Eat no</b><br>pizza,burger,chinese   100rs for one<br><br><b> Expexted time:31mins</b></pre</button>
+        <button class="btn-img"><img class="bodyimg"src="/img/haldiram bhujiawala.webp" alt=""><pre><b>Haldiram bhujiawala</b><br>allo bhujia,snacks,beverages...   100rs for one<br><br><b> Expexted time:31mins</b></pre</button>
+        <br>
+        <button class="btn-img"><img class="bodyimg"src="/img/jai shree shankar bhojnalaya.webp" alt=""><pre><b>jai shree shankar bhojnalaya</b><br>north indian,chinese,south indian...   100rs for one<br><br><b> Expexted time:34mins</b></pre></button>
+        <button class="btn-img"><img class="bodyimg"src="/img/jai shree shankar punjabi dhaba.webp" alt=""><pre><b>jai shree shankar punjabi dhaba</b><br>north indin,chinese...   200rs for one<br><br><b> Expexted time:35mins</b></pre></button>
+        <button class="btn-img"><img class="bodyimg"src="/img/jaiswal dosa point.webp" alt=""><pre><b>jaiswal dosa point</b><br>South indian,chinese,street foods...   120rs for one<br><br><b> Expexted time:25 mins</b></pre></button>
+        <button class="btn-img"><img class="bodyimg"src="/img/kamdhenu sweets.webp" alt=""><pre><b>kamdhenu sweets</b><br>Mithai,fast food and street food...   150rs for one<br><br><b> Expexted time:36mins</b></pre></button>
+        <button class="btn-img"><img class="bodyimg"src="/img/mc donalds.webp" alt=""><pre><b>Mc Donald's</b><br>burger,fast food,beverages...   100rs for one<br><br><b> Expexted time:28 mins</b></pre></button>
+        <button class="btn-img"><img class="bodyimg"src="/img/moms kitchen.webp" alt=""><pre><b>Mom's Kitchen</b><br>South indian,noth i...   100rs for one<br><br><b> Expexted time:31mins</b></pre></button>
+        <button class="btn-img"><img class="bodyimg"src="/img/rasoi restaurants.webp" alt=""><pre><b>Rasoi Restaurant</b><br>pizza,burger,pasta,rolls and many more...   200rs for one<br><br><b> Expexted time:40 mins</b></pre></button>
+        <button class="btn-img"><img class="bodyimg"src="/img/shree kanha sweets and restaurants.webp" alt=""><pre><b>shree kanha sweets and restaurants</b><br>chinese,south indian,fastfoods...   150rs for one<br><br><b> Expexted time:38mins</b></pre></button>
+        <button class="btn-img"><img class="bodyimg"src="/img/swarana's kitchen.webp" alt=""><pre><b>Hot Pizza and Burger Restaurant</b><br>pizza,burger,pasta,rolls and many more...   100rs for one<br><br><b> Expexted time:31mins</b></pre></button>
+        <button class="btn-img"><img class="bodyimg"src="/img/lali china town.webp" alt=""><pre><b>Lali China Town</b><br>fast food,chinese,burger    150rs for one<br><br><b>Expexted time:54 mins</b></pre></button>
+        <button class="btn-img"><img class="bodyimg"src="/img/maggi adda.webp" alt=""><pre><b>Maggi Adda</b><br>street foods,desserts,maggi <br><br><b>Expexted time: 59 mins</b></pre></button>
+        <button class="btn-img"><img class="bodyimg" src="/img/honkong express.webp" alt=""><pre><b>Honkong express</b><br>chinese momos and shake...   150rs for one<br><br><b> Expexted time:29 mins</b></pre></button>
+
+    </div>
+    <br>
+    </main>
+    <footer id="footbg">
+        <div>
+            <b>Map my food</b>>
+            <br>
+            <select id="country">
+               <option value="India">India</option>
+               <option value="Australia">Australia</option>
+               <option value="Australia">Australia</option>
+               <option value="Canada">Canada</option>
+               <option value="Chile">Chile</option>
+               <option value="Czech Republic">Czech Republic</option>
+               <option value="Indonesia">Indonesia</option>
+               <option value="Ireland">Ireland</option>
+               <option value="Italy">Italy</option>
+               <option value="Lebanon">Lebanon</option>
+               <option value="Malaysia">Malaysia</option>
+               <option value="Malaysia">Malaysia</option>
+               <option value="South Africa">South Africa</option>
+               <option value="Sri Lanka">Sri Lanka</option>
+               <option value="UAE">UAE</option>
+               <option value="usa">usa</option>
+               <option value="united kingdom">united kingdom</option>
+            </select>
+            <select id="lang">
+                <option value="english">English</option>
+                <option value="italian">italian</option>
+                <option value="polish">polish</option>
+                <option value="indonesian">indonesian</option>
+                <option value="portuguese(Pt)">Portuguese(PT)</option>
+                <option value="vietnamese">vietnamese</option>
+                <option value="hindi">Hindi</option>
+                <option value="potuguese(BR)">Portuguese(BR)</option>
+            </select>
+
+        </div>
+        
+        <div class="footer"> 
+            <b class="footer">About map my food</b>
+            <br>
+            <a class="about" href="#">who we are</a>
+            <br>
+            <a class="about" href="#">blog</a>
+            <br>
+            <a class="about"  href="#">work with us</a>
+            <br>
+            <a class="about"  href="#">investors relation</a>
+            <br>
+            <a class="about" href="#">report fraud</a>
+            <br>
+            <a class="about"  href="#">contact us</a>
+            <br>
+        </div>
+        <div class="footer">
+            <b>For Restaurants</b>
+            <br>
+            <a class="about" href="#">partner with us</a>
+            <br>
+            <a class="about" href="#">Apps for u</a>
+            <br>
+        </div>
+        <div class="footer"> 
+            <br>
+            <b>For Enterprise</b>
+            <br>
+            <a class="footer" href="#">map my food for enterprise</a>
+            <br>
+        </div> 
+        <div class="footer"> 
+            <b>Learn more</b>
+            <br>
+            <a class="footer" href="#">Privacy</a>
+            <br>
+            <a class="footer" href="#">Security</a>
+            <br>
+            <a  class="footer"href="#">Terms</a>
+            <br>
+            <a class="footer"href="#">Sitemap</a>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+    </footer>
+    <script>
+        function myFunction() {
+            location.replace("orderonline.html")
+        }
+        function red() {
+            location.replace("dining.html")
+        }
+        function redirect() {
+            location.replace("nightout.html")
+        }
+    </script>
+</body>
+</html>

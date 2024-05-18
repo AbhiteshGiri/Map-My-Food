@@ -1,0 +1,67 @@
+body{
+    padding:0px;
+    margin:0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#text{
+    color:black;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:900;
+}
+.size{
+    height:80px;
+    width:80px;
+   
+}
+.but{
+    width:280px;
+    height:80px;
+    margin-left:10px;
+    margin-right:10px;
+    background-color: white;
+    border: none;
+}
+.view{
+    height:80px;
+    width:80px;
+    border-radius:50%;
+
+}
+.containerimg{
+    background-color: #e6ad3c;
+    overflow: auto; /* for adding scroll bar horizontally*/
+    white-space: nowrap; /*for displaying only some content not all at a time*/
+    padding: 10px;
+    border:2px red solid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:400px;
+    text-transform: capitalize;
+}
+.bodyimg{
+    border-radius:14px;
+    height:200px;
+    width:100%;
+}
+.butimg{
+    padding:0;
+}
+.btn-img{
+    border: 1px solid gray;
+    border-radius: 14px;
+    height:280px;
+    width:400px;
+    margin-top:10px;
+}
+.motive{
+    text-align:center;
+    font-size: 16px;
+    text-transform: capitalize;
+    color:rgb(188, 75, 75);
+}
+.btn-div{
+    margin:10px;
+    display:flex;
+    gap:20px;
+    width: 100%;
+}

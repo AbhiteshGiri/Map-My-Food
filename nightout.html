@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map My Food</title>
+    <link rel="stylesheet"href="/css/style2.css">
+    <link rel="stylesheet"href="/css/style.css">
+    <link rel="icon" href="/img/logo.png" type="png">
+</head>
+
+<body>
+    <header>
+        <div>
+        <b style="text-shadow:yellow;color:red;font-family: cursive;font-weight:700;font-size:20px">Map My Food</b>
+            <div class="motive">
+                <select name="city">
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi ">Delhi </option>
+                <option value="Kolkata ">Kolkata </option>
+                <option value="Chennai">Chennai  </option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Pune">Pune</option>
+                <option value="Surat ">Surat </option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Kanpur">Kanpur</option>
+                <option value="Lucknow">Lucknow</option>
+                <option value="Nagpur">Nagpur</option>
+                <option value="Indore">Indore</option>
+                <option value="Patna">Patna</option>
+                <option value="Bhopal">Bhopal</option>
+                <option value="Thane">Thane</option>
+                <option value="Vadodara">Vadodara</option>
+                <option value="Visakhapatnam">Visakhapatnam</option>
+                <option value="Pimpri-Chinchwad">Pimpri-Chinchwad</option>
+                <option value="prayagraj">prayagaraj</option>
+    
+            </select>
+            <input type="text" placeholder="enter your location" >
+            <button id="search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bibi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg></button>
+            <br>
+            <b >yeh taste kiya kya</b>
+         </div>
+        </div>
+        <br>
+        <div style="text-align: center;">
+            <button onclick="myFunction()" class="but"><img class="size"src="/img/delivery2.webp" alt="delivery">Delivery</button>
+            <button onclick="red()" class="but"><img class="size"src="/img/dining2.webp" alt="">Dining</button>
+            <button onclick="redirect()" class="but"><img class="size"src="/img/night out.webp" alt="">Night out</button>
+        </div>
+        </header>
+        <main>
+            <br>
+            <div>
+                <img style="height:200px;width:100%"src="/img/diningout.webp"alt="">
+            </div>
+            <br>
+            
+        <b style="font-size: large;">Best Nightout restro/restaurants in Prayagraj:</b>
+        <br>
+        <br>
+        <div class="btn-div">
+            <button class="btn-img"><img class="bodyimg" src="/img/black out restaurant.webp" alt=""><pre><b>Black Out Restaurant </b><br><br>north indian,mughlai,desserts...       400rs for two<br>civil lines,allahabad                   <b>21 kms</b> </pre></button>
+
+            <button class="btn-img"><img class="bodyimg" src="/img/sagar ratna.webp" alt=""><pre><b>Sagar Ratna </b><br><br>south indian,north indian...      250rs for two<br>tagore town,allahabad                   <b>20.4kms</b> </pre></button>
+
+            <button class="btn-img"><img class="bodyimg" src="/img/makhan.webp" alt=""><pre><b>makkhan's Restaurants </b><br><br>south indian,north indian...       750rs for two<br>civil lines,allahabad                   <b>22 kms</b> </pre></button>
+
+            <button class="btn-img"><img class="bodyimg" src="/img/cafe meraki.webp" alt=""><pre><b>cafe meraki </b><br><br>coffe,cafe,italian,mexican...      1100rs for two<br>civil lines,allahabad                   <b>19.2kms</b> </pre></button>
+            <button class="btn-img"><img class="bodyimg" src="/img/kfc.webp" alt=""><pre><b>KFC </b><br><br>burger,fast food,biryani..      450rs for two<br>civil lines,allahabad                   <b>21.5kms</b> </pre></button>
+            <button class="btn-img"><img class="bodyimg" src="/img/mc donalds2.webp" alt=""><pre><b>MC Donald's </b><br><br>burger,fast food,beverages..      500rs for two<br>civil lines,allahabad                   <b>21.8kms</b> </pre></button>
+
+            <button class="btn-img"><img class="bodyimg" src="/img/el chico.webp" alt=""><pre><b>El chico </b><br><br>continental,north indian...       1400rs for two<br>civil lines,allahabad                   <b>15kms</b> </pre></button>
+
+        </div>
+        <br>
+        </main>
+        <footer id="footbg">
+            <div>
+                <b>Map my food</b>>
+                <br>
+                <select id="country">
+                   <option value="India">India</option>
+                   <option value="Australia">Australia</option>
+                   <option value="Australia">Australia</option>
+                   <option value="Canada">Canada</option>
+                   <option value="Chile">Chile</option>
+                   <option value="Czech Republic">Czech Republic</option>
+                   <option value="Indonesia">Indonesia</option>
+                   <option value="Ireland">Ireland</option>
+                   <option value="Italy">Italy</option>
+                   <option value="Lebanon">Lebanon</option>
+                   <option value="Malaysia">Malaysia</option>
+                   <option value="Malaysia">Malaysia</option>
+                   <option value="South Africa">South Africa</option>
+                   <option value="Sri Lanka">Sri Lanka</option>
+                   <option value="UAE">UAE</option>
+                   <option value="usa">usa</option>
+                   <option value="united kingdom">united kingdom</option>
+                </select>
+                <select id="lang">
+                    <option value="english">English</option>
+                    <option value="italian">italian</option>
+                    <option value="polish">polish</option>
+                    <option value="indonesian">indonesian</option>
+                    <option value="portuguese(Pt)">Portuguese(PT)</option>
+                    <option value="vietnamese">vietnamese</option>
+                    <option value="hindi">Hindi</option>
+                    <option value="potuguese(BR)">Portuguese(BR)</option>
+                </select>
+    
+            </div>
+            
+            <div class="footer"> 
+                <b class="footer">About map my food</b>
+                <br>
+                <a class="about" href="#">who we are</a>
+                <br>
+                <a class="about" href="#">blog</a>
+                <br>
+                <a class="about"  href="#">work with us</a>
+                <br>
+                <a class="about"  href="#">investors relation</a>
+                <br>
+                <a class="about" href="#">report fraud</a>
+                <br>
+                <a class="about"  href="#">contact us</a>
+                <br>
+            </div>
+            <div class="footer">
+                <b>For Restaurants</b>
+                <br>
+                <a class="about" href="#">partner with us</a>
+                <br>
+                <a class="about" href="#">Apps for u</a>
+                <br>
+            </div>
+            <div class="footer"> 
+                <br>
+                <b>For Enterprise</b>
+                <br>
+                <a class="footer" href="#">map my food for enterprise</a>
+                <br>
+            </div> 
+            <div class="footer"> 
+                <b>Learn more</b>
+                <br>
+                <a class="footer" href="#">Privacy</a>
+                <br>
+                <a class="footer" href="#">Security</a>
+                <br>
+                <a  class="footer"href="#">Terms</a>
+                <br>
+                <a class="footer"href="#">Sitemap</a>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+    
+        </footer>
+        <script>
+            function myFunction() {
+                location.replace("orderonline.html")
+            }
+            function red() {
+                location.replace("dining.html")
+            }
+            function redirect() {
+                location.replace("nightout.html")
+            }
+        </script>
+</body>
+</html>

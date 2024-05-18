@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map My Food</title>
+    <link rel="icon" href="/img/logo.png" type="png">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="bg4"><img class="bg-img"src="/img/bg4.jpg">
+        <div id="navbar" class="upper"> 
+            <br>
+            <b id="logo">Map My Food</b>
+            <a onclick="alerts()"href="#">Add your restaurant</a>
+            <a href="/loginpage.html">Login</a>
+            <a href="/signup.html">Signup</a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGMGMrrvpBcRXkBbbHLPWqWlNdPKhpjwXcgFwHbcCKWHWHKJTfFXVcVbWnjVbfBFBKFzWXw">contact us</a>
+            <br>
+            <br>
+            <h1 id="name">Map My Food</h1>
+            <br>
+            <br>
+            <div class="or">
+            <select name="city">
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi ">Delhi </option>
+                <option value="Kolkata ">Kolkata </option>
+                <option value="Chennai">Chennai  </option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Pune">Pune</option>
+                <option value="Surat ">Surat </option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Kanpur">Kanpur</option>
+                <option value="Lucknow">Lucknow</option>
+                <option value="Nagpur">Nagpur</option>
+                <option value="Indore">Indore</option>
+                <option value="Patna">Patna</option>
+                <option value="Bhopal">Bhopal</option>
+                <option value="Thane">Thane</option>
+                <option value="Vadodara">Vadodara</option>
+                <option value="Visakhapatnam">Visakhapatnam</option>
+                <option value="Pimpri-Chinchwad">Pimpri-Chinchwad</option>
+                <option value="prayagraj">prayagaraj</option>
+
+            </select>
+            <input type="text" placeholder="search food map">
+            <button id="search"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg></button>
+            </div>
+            <div style="text-align: center;">
+            <b id="line">Discover the best foods and drinks near you</b>
+            </div>
+        </div>
+    </div>
+    </header>
+    <main>
+        <section>
+            <br>
+            <div class="impnote">
+                <b id="trust"> you can blindly trust us family</b>
+                <br>
+                <i id="nos" style="text-transform:capitalize">you just choose here what you want and our team will take care of your food hygiene and taste </i>
+                <br>
+                <i id="nos">we have more than 10 million customers trust</i>
+            </div>
+    
+        </section>
+        <br>
+        <section>
+            <div class="btn" >
+                <button onclick="myFunction()"class="content2" ><img class="orderdining"src="/img/orderonline.jpg"><br><b >Order Online</b><br>stay home and order to your doorstep</button>
+                <button onclick="dining()"class="content2" ><img class="orderdining"src="/img/Althea_0.webp"><br><b>Dining</b><br>view the city's favourite dining venues</button>
+            </div>
+        </section>
+        <section>
+            <br>
+            <div >
+                <div>
+                <b class="collection">collections</b>
+                <br>
+                <br>
+               <pre id="slogan2"> Explore curated lists of top restaurants, cafes, pubs, and bars in Allahabad, based on trends </pre>
+                <br>
+                </div>
+                <div class="collection-item">
+                <button class="item" ><img onclick="myalert()"class="collect"src="/img/parentsday.webp"><br><b >best places for parent's day</b><br></button>
+                <button class="item"><img onclick="dining()"class="collect"src="/img/dining.jpg"><br><b >best dining places</b><br></button>
+                <button class="item"><img onclick="redirect()"class="collect"src="/img/romantic table.jpg"><br><b >Top 10 romantic restaurant places</b><br></button>
+                </div>
+            </div>
+        </section>
+        <br>
+        <section>
+            <div>
+                <b class="collection">Explore options near you</b>
+                <br>
+                <br>
+                <a class="options" href="#">Bakery food near me</a> 
+                <a class="options"href="#">Beverages food near me</a> 
+                <a class="options"href="#">Biryani food near me</a> 
+                <a class="options"href="#">Burger food near me</a> 
+                <a class="options" href="#">Chinese food near me</a> 
+                <a class="options" href="#">Coffee food near me</a>
+                <a class="options"href="#">Desserts food near me</a> 
+                <a class="options"href="#">Ice Cream food near me</a> 
+                <a class="options" href="#">Mithai food near me</a> 
+                <a class="options"href="#">Momos food near me</a> 
+                <a class="options" href="#">Mughlai food near me</a> 
+                <a class="options"href="#">North Indian food near me</a> 
+                <a class="options" href="#">Rolls food near me</a> 
+                <a class="options" href="#">Sandwich food near me</a> 
+                <a class="options" href="#">Shake food near me</a> 
+                <a class="options"href="#">Sichuan food near me</a> 
+                <a class="options" href="#">South Indian food near me</a> 
+                <a class="options" href="#">Street food near me</a>
+                <a class="options" href="#">Tea food near me</a>
+            </div>
+            <br> <br>
+        </section>
+
+    </main>
+    <footer id="footbg">
+        <div>
+            <b>Map my food</b>>
+            <br>
+            <select id="country">
+               <option value="India">India</option>
+               <option value="Australia">Australia</option>
+               <option value="Australia">Australia</option>
+               <option value="Canada">Canada</option>
+               <option value="Chile">Chile</option>
+               <option value="Czech Republic">Czech Republic</option>
+               <option value="Indonesia">Indonesia</option>
+               <option value="Ireland">Ireland</option>
+               <option value="Italy">Italy</option>
+               <option value="Lebanon">Lebanon</option>
+               <option value="Malaysia">Malaysia</option>
+               <option value="Malaysia">Malaysia</option>
+               <option value="South Africa">South Africa</option>
+               <option value="Sri Lanka">Sri Lanka</option>
+               <option value="UAE">UAE</option>
+               <option value="usa">usa</option>
+               <option value="united kingdom">united kingdom</option>
+            </select>
+            <select id="lang">
+                <option value="english">English</option>
+                <option value="italian">italian</option>
+                <option value="polish">polish</option>
+                <option value="indonesian">indonesian</option>
+                <option value="portuguese(Pt)">Portuguese(PT)</option>
+                <option value="vietnamese">vietnamese</option>
+                <option value="hindi">Hindi</option>
+                <option value="potuguese(BR)">Portuguese(BR)</option>
+            </select>
+
+        </div>
+        
+        <div class="footer"> 
+            <b class="footer">About map my food</b>
+            <br>
+            <a class="about" href="#">who we are</a>
+            <br>
+            <a class="about" href="#">blog</a>
+            <br>
+            <a class="about"  href="#">work with us</a>
+            <br>
+            <a class="about"  href="#">investors relation</a>
+            <br>
+            <a class="about" href="#">report fraud</a>
+            <br>
+            <a class="about"  href="#">contact us</a>
+            <br>
+        </div>
+        <div class="footer">
+            <b>For Restaurants</b>
+            <br>
+            <a class="about" href="#">partner with us</a>
+            <br>
+            <a class="about" href="#">Apps for u</a>
+            <br>
+        </div>
+        <div class="footer"> 
+            <br>
+            <b>For Enterprise</b>
+            <br>
+            <a class="footer" href="#">map my food for enterprise</a>
+            <br>
+        </div> 
+        <div class="footer"> 
+            <b>Learn more</b>
+            <br>
+            <a class="footer" href="#">Privacy</a>
+            <br>
+            <a class="footer" href="#">Security</a>
+            <br>
+            <a  class="footer"href="#">Terms</a>
+            <br>
+            <a class="footer"href="#">Sitemap</a>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+    </footer>
+    <script>
+        function myFunction() {
+            location.replace("/signup.html")
+        }
+        function dining() {
+            location.replace("/signup.html")
+        }
+        function myalert() {
+        alert("Oops! sorry: Yet not added any restaurant for that events");
+        }
+        function alerts() {
+        alert("sorry for the inconvenience: we have closed this services for some moment");
+        }
+        function redirect() {
+            location.replace("/signup.html")
+        }
+    </script>
+</body>
+</html>
