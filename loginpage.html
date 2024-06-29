@@ -1,118 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login: Map My Food</title>
-    <link rel="icon" href="img/logo.png" type="png">
+    <link rel="icon" href="img/logo.png" type="png" />
     <style>
-        body{
-            font-family: sans-serif;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background:linear-gradient(45% red 35% green);
-        }
-        .main{
-            width: 350px;
-            height: 600px;
-            border: 1px solid black;
-            border-radius: 8px;
-            background-color: #fff;
-            margin-top: 100px;
-            box-shadow: 1px 1px 20px 1px gray;
-        }
-        img{
-            height: 90px;
-            margin-left: 50px;
-            margin-top: 30px;
-            /* mix-blend-mode: multiply; */
-        }
-        .head{
-            width: 100%;
-            height: 150px;
-            border: 0px solid black;
-            display: flex;
-            background-color: #7d92fc;
-            overflow: hidden;
-            border-radius: 8px;
-        }
-        #text{
-            margin-top: 60px;
-            font-weight: bold;
-            font-family: sans-serif;
-            color: #000000;
-            font-size: 25px;
-        }
-        .foot{
-            height: 450px;
-            width: 100%;
-            border: 0px solid black;
-            border-radius: 0px;
-        }
-        #log{
-            color: black;
-            font-family: sans-serif;
-            font-weight: bold;
-            margin-left: 30px;
-            margin-top: 20px;
-        }
-        #txt{
-            width: 80%;
-            height: 29px;
-            border: 2px solid black;
-            border-radius: 5px;
-            margin-left: 9%;
-            font-size: 20px;
-        }
-        #btn{
-            width: 95%;
-            height: 40px;
-            border: none;
-            font-size: 22px;
-            margin-left: 10px;
-            border-radius: 4px;
-            /* border: none; */
-            margin-top: 220px;
-            /* background-color: #ffffff;
+      body {
+        font-family: sans-serif;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(45% red 35% green);
+      }
+      .main {
+        width: 350px;
+        height: 600px;
+        border: 1px solid #fd9e0d;
+        border-radius: 8px;
+        background-color: #fff;
+        margin-top: 100px;
+        box-shadow: 1px 1px 20px 1px #d14d29;
+      }
+
+      img {
+        height: 90px;
+        margin-left: 50px;
+        margin-top: 30px;
+        /* mix-blend-mode: multiply; */
+      }
+      .head {
+        width: 100%;
+        height: 150px;
+        border: 0px solid black;
+        display: flex;
+        background-color: #ce1416;
+        overflow: hidden;
+        border-radius: 8px;
+      }
+      #text {
+        margin-top: 60px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: #000000;
+        font-size: 25px;
+      }
+      .foot {
+        height: 450px;
+        width: 100%;
+        border: 0px solid black;
+        border-radius: 0px;
+      }
+      #log {
+        color: black;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-left: 30px;
+        margin-top: 20px;
+      }
+      #txt {
+        width: 80%;
+        height: 29px;
+        border: 2px solid black;
+        border-radius: 5px;
+        margin-left: 9%;
+        font-size: 20px;
+      }
+      #btn {
+        width: 95%;
+        height: 40px;
+        border: none;
+        font-size: 22px;
+        margin-left: 10px;
+        border-radius: 4px;
+        /* border: none; */
+        margin-top: 220px;
+        /* background-color: #ffffff;
              color: #000000; */
-            cursor: pointer;
-        }
-        
+        cursor: pointer;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main">
-        <div class="head">
-            <img src="img/logo.png" alt="logo">&emsp;
-            <p id="text">Map my Food</p>
-        </div>
-        <div class="foot">
-            <p id="log">enter your phone number to login</p>
-            <br><br>
-            <input type="text" placeholder="Enter mobile no" id="txt" autocomplete="off"><br><br>
-            <button id="btn" onclick="clk();" type="submit" disabled >login to my account</button>
-        </div>
+      <div class="head">
+        <img src="img/logo.png" alt="logo" />&emsp;
+        <p id="text">Map my Food</p>
+      </div>
+      <div class="foot">
+        <p id="log">enter your phone number to login</p>
+        <br /><br />
+        <input
+          type="number"
+          placeholder="Enter mobile no"
+          id="txt"
+          autocomplete="off"
+        /><br /><br />
+        <button id="btn" onclick="VgenerateOTP();" type="submit" disabled>
+          login to my account
+        </button>
+      </div>
     </div>
     <script>
-            const submitButton = document.getElementById("btn"); 
-            const input = document.getElementById("txt");
-            input.addEventListener("keypress",(e)=>
-            {
-                const value = e.currentTarget.value;
-                    submitButton.disabled= false;
-                    submitButton.style.backgroundColor= "#4a68ff";
-                    submitButton.style.color="white"
-                if(value === "")
-                {
-                    submitButton.disabled = true;
-                }
-            });
-            function clk(){
-            window.location = "otp.html"
-            }200;
-        
+      const submitButton = document.getElementById("btn");
+      const input = document.getElementById("txt");
+      input.addEventListener("keypress", (e) => {
+        const value = e.currentTarget.value;
+        submitButton.disabled = false;
+        submitButton.style.backgroundColor = "#D5484A";
+        submitButton.style.color = "white";
+        if (value === "") {
+          submitButton.disabled = true;
+        }
+      });
+      function clk() {
+        window.location = "otp.html";
+      }
+
+
+      function VgenerateOTP() {
+        const phoneNum = document.getElementById("txt").value;
+
+        event.preventDefault();
+
+        if (!phoneNum) {
+          alert("All fields are mandatory");
+        } else {
+          generateOTP(); // Call the generateOTP function
+        }
+      }
+
+      function generateOTP() {
+        const phoneNumber = document.getElementById("txt").value;
+        const otp = Math.floor(100000 + Math.random() * 900000);
+        alert(`OTP sent to ${phoneNumber}: ${otp}`);
+        sessionStorage.setItem("generatedOTP", otp); // Store OTP in sessionStorage
+        sessionStorage.setItem("phoneNumber", phoneNumber); // Store phone number
+        window.open("otp.html", "_self"); // Redirect to validation page
+        // window.location.href = "LoginOtp.html";
+      }
     </script>
-</body>
+  </body>
 </html>

@@ -65,3 +65,17 @@ body{
     gap:20px;
     width: 100%;
 }
+.headings2{
+    display: block;
+    text-align: center;
+    font-size: large;
+}
+.adjustingBtn{
+    position: relative;
+    top: 35px;
+}
+.adjustingBtn2{
+    position: relative;
+    top: 20px;
+    margin-right: 5px;
+}
