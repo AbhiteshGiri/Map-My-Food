@@ -43,7 +43,7 @@ select{
     font-size:80px;
     font-weight:900;
     text-align:"center";
-    margin-left:380px;
+    margin-left:350px;
     display:inline-block;
     color: rgb(189, 26, 26);
     
@@ -59,6 +59,7 @@ select{
     font-size:25px;
     color:rgb(94, 63, 63);
     text-align: center;
+   
 }
 .upper{
     
