@@ -1,0 +1,6 @@
+.hotpizza-imgcontainer{
+    transform:0.4s ease-in-out 0s, opacity 1.63s ease 0s, filter 0.4s ease 0s;
+}
+.hotpizza-imgcontainer>img:hover{
+    transform: scale(-1.2);
+}

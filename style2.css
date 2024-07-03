@@ -52,8 +52,9 @@ body{
 .btn-img{
     border: 1px solid gray;
     border-radius: 14px;
-    height:280px;
+    height:300px;
     width:390px;
+    padding: 10px;
     margin-top:10px;
 }
 .motive{
